@@ -1,0 +1,171 @@
+
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+*{
+    font-family: sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 65.5%;
+    overflow: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+
+}
+header .logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+}
+header .navbaar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem  1.5rem;
+    color: var(--light-color);
+}
+header .navbaar a.active,
+header .navbaar a:hover{
+    color: #fff;
+    background: var(--green);
+}
+header .icons img{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 3.5rem;
+    line-height: 4.5rem;
+    width: 3.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background-color: #eee;
+    
+}
+
+header .icons img:hover{
+    color:#fff;
+    background: var(--box-shadow);
+    transform: rotate(360deg);
+}
+.menubar{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding:1rem 2rem;
+    }
+        
+
+}
+@media (max-width:768px){
+    header .icons .menubar{
+        display: inline-block;
+    
+    }
+    header .navbaar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0,100% 0,0 0);
+    }
+    header .navbaar.active{
+        clip-path: polygon(0 0, 100% 0,100% 0,0 0);
+
+    }
+    header .navbaar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+
+    }
+
+
+}
+@media (max-width:991px){
+    html{
+        font-size: 50%;
+    }
+    
+        
+
+}
+
+
+
+
+
